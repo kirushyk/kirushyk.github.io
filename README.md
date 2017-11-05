@@ -1,1 +1,0 @@
-# kirushyk.github.io
