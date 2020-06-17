@@ -5,13 +5,34 @@
         <link rel="shortcut icon" href="#" />
     </head>
     <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Kyrylo Polezhaiev</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" id="li0">
+                        <a class="nav-link" href="#" onclick="setPage(0);">Projects</a>
+                    </li>
+                    <li class="nav-item" id="li1">
+                        <a class="nav-link" href="#" onclick="setPage(1);">Articles</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="setPage(2);">Links</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="container">
             <div class="page-header">
             </div>
-
-            <h1>Kyrylo Polezhaiev</h1>
-            <img src="kirushyk.jpg" width="300" height="200"/>
-            <section>
+            
+            <div id="page0" style="display:none;">
                 <h2>Projects</h2>
                 <ul>
                     <li><a target="_blanc" href="https://github.com/kirushyk/le/">Le</a> &mdash; Machine Learning library written in C</li>
@@ -22,19 +43,24 @@
                     <li><a target="_blanc" href="tapotron.html">Tapotron</a> &mdash; Puzzle game for Windows Phone and iOS</li>
                     <li><a target="_blanc" href="http://forums.bigfishgames.com/forums/show/2635.page">Christmas Tales: Fellina's Journey</a> &mdash; Hidden object game for PC and Mac</li>
                 </ul>
-            </section>
-            <section>
+            </div>
+            <div id="page1" style="display:none;">
                 <h2>Articles</h2>
                 <ul>
                     <li><a target="_blanc" href="1.html">Simple time profiling of GStreamer pipelines</a></li> 
                     <li><a target="_blanc" href="2.html">Speaker Recognition</a></li> 
                 </ul>
-            </section>
-            <a target="_blanc" href="https://instagram.com/kirushyk"><img src="instagram.svg" width="32" height="32"/></a>
-            <a target="_blanc" href="https://twitter.com/kirushyk"><img src="twitter.svg" width="32" height="32"/></a>
-            <a target="_blanc" href="https://www.linkedin.com/in/kirushyk"><img src="linkedin.svg" width="32" height="32"/></a>
-            <footer>&copy; 2015 Kyrylo Polezhaiev</footer>
+            </div>
+            <div id="page2" style="display:none;">
+                <img src="kirushyk.jpg" width="300" height="200"/>
+                <a target="_blanc" href="https://instagram.com/kirushyk"><img src="instagram.svg" width="32" height="32"/></a>
+                <a target="_blanc" href="https://twitter.com/kirushyk"><img src="twitter.svg" width="32" height="32"/></a>
+                <a target="_blanc" href="https://www.linkedin.com/in/kirushyk"><img src="linkedin.svg" width="32" height="32"/></a>
+                <footer>&copy; 2015 Kyrylo Polezhaiev</footer>
+            </div>
         </div>
 
+        <script src="ui.js"></script>
+        <script src="init.js"></script>
     </body>
 </html>
