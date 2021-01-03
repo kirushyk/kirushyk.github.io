@@ -6,3 +6,10 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #ddd;
+        background-color: #222;
+    }
+}
