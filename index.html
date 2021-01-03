@@ -1,69 +1,56 @@
 <html>
     <head>
-        <title>Kyrylo Polezhaiev</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Kyrylo P.</title>
         <link rel="stylesheet" href="bootstrap.min.css" />
+        <link rel="stylesheet" href="index.css" />
         <link rel="shortcut icon" href="#" />
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Kyrylo Polezhaiev</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item" id="li0">
-                        <a class="nav-link" href="#" onclick="setPage(0);">Projects</a>
-                    </li>
-                    <li class="nav-item" id="li1">
-                        <a class="nav-link" href="#" onclick="setPage(1);">Articles</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="setPage(2);">Links</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
         <div class="container">
-            <div class="page-header">
-            </div>
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <img src="kirushyk.jpg" width="300" height="200"/><hr/>
+                </div>
             
-            <div id="page0" style="display:none;">
-                <h2>Projects</h2>
-                <ul>
-                    <li><a target="_blanc" href="https://github.com/kirushyk/le/">Le</a> &mdash; Machine Learning library written in C</li>
-                    <li><a target="_blanc" href="https://github.com/kirushyk/gst-instruments/">GStreamer Instruments</a> &mdash; Easy-to-use profiler for GStreamer</li>
-                    <li><a target="_blanc" href="https://github.com/kirushyk/kms-windows/">KMS-Windows</a> &mdash; Windows port of Kurento Media Server</li>
-                    <hr/>
-                    <li><a target="_blanc" href="tizenstore://ProductDetail/000000010943">SkyMap</a> &mdash; Star finder app for Tizen (2013)</li>
-                    <li><a target="_blanc" href="404.html">Tapotron</a> &mdash; Puzzle game for Windows Phone and iOS (2013)</li>
-                    <li><a target="_blanc" href="http://forums.bigfishgames.com/forums/show/2635.page">Christmas Tales: Fellina's Journey</a> &mdash; Hidden object game for PC and Mac (2011)</li>
-                </ul>
+                <div class="col-lg-6">
+                    <h2>Kyrylo Polezhaiev</h2>
+                    <ul class="list-unstyled">
+                        <li><a target="_blanc" href="https://github.com/kirushyk">GitHub</a></li>
+                        <li><a target="_blanc" href="https://www.linkedin.com/in/kirushyk">LinkedIn</a></li>
+                        <li><a target="_blanc" href="https://www.upwork.com/freelancers/~01a1472e8a5d296207">Upwork</a></li>
+                    </ul>
+                </div>
+
             </div>
-            <div id="page1" style="display:none;">
-                <h2>Articles</h2>
-                <ul>
-                    <li><a target="_blanc" href="404.html">Flow between last activation and loss</a></li> 
-                    <li><a target="_blanc" href="404.html">Notes on Gradient Checking</a></li> 
-                    <li><a target="_blanc" href="404.html">Suffering of emulated minds</a></li> 
-                    <li><a target="_blanc" href="https://gstreamer.freedesktop.org/data/events/gstreamer-conference/2016/Kyrylo%20Polezhaiev%20-%20Profiling%20GStreamer%20Pipelines.pdf">Simple time profiling of GStreamer pipelines</a> (2015, 2016)</li> 
-                    <li><a target="_blanc" href="404.html">Speaker Recognition</a> (2012)</li> 
-                </ul>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li><a target="_blanc" href="https://github.com/kirushyk/le/">Le</a> &mdash; Machine Learning library written in C</li>
+                        <li><a target="_blanc" href="https://github.com/kirushyk/gst-instruments/">GStreamer Instruments</a> &mdash; Easy-to-use profiler for GStreamer</li>
+                        <li><a target="_blanc" href="https://github.com/kirushyk/kms-windows/">KMS-Windows</a> &mdash; Windows port of Kurento Media Server</li>
+                        <hr/>
+                        <li><a target="_blanc" href="tizenstore://ProductDetail/000000010943">SkyMap</a> &mdash; Star finder app for Tizen (2013)</li>
+                        <li><a target="_blanc" href="404.html">Tapotron</a> &mdash; Puzzle game for Windows Phone and iOS (2013)</li>
+                        <li><a target="_blanc" href="http://forums.bigfishgames.com/forums/show/2635.page">Christmas Tales: Fellina's Journey</a> &mdash; Hidden object game for PC and Mac (2011)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h2>Articles</h2>
+                    <ul>
+                        <li><a target="_blanc" href="404.html">Flow between last activation and loss</a></li> 
+                        <li><a target="_blanc" href="404.html">Notes on Gradient Checking</a></li> 
+                        <li><a target="_blanc" href="404.html">Suffering of emulated minds</a></li> 
+                        <li><a target="_blanc" href="https://gstreamer.freedesktop.org/data/events/gstreamer-conference/2016/Kyrylo%20Polezhaiev%20-%20Profiling%20GStreamer%20Pipelines.pdf">Simple time profiling of GStreamer pipelines</a> (2015, 2016)</li> 
+                        <li><a target="_blanc" href="404.html">Speaker Recognition</a> (2012)</li> 
+                    </ul>
+                </div>
             </div>
-            <div id="page2" style="display:none;">
-                <h2>Kyrylo Polezhaiev</h2>
-                <ul class="list-unstyled">
-                    <li><a target="_blanc" href="https://github.com/kirushyk">GitHub</a></li>
-                    <li><a target="_blanc" href="https://www.linkedin.com/in/kirushyk">LinkedIn</a></li>
-                    <li><a target="_blanc" href="https://www.upwork.com/freelancers/~01a1472e8a5d296207">Upwork</a></li>
-                </ul>
-                <!-- <img src="kirushyk.jpg" width="300" height="200"/><hr/> -->
                 <!-- <footer>&copy; 2015 Kyrylo Polezhaiev</footer> -->
-            </div>
         </div>
 
         <script src="ui.js"></script>
