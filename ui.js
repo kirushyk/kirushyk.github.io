@@ -4,3 +4,18 @@ function setPage(page) {
         document.getElementById('li' + i).setAttribute('class', page === i ? 'nav-item active' : 'nav-item')
     }
 }
+
+function showItemModal(itemName) {
+    var itemRequest = new XMLHttpRequest()
+    itemRequest.onreadystatechange = function () {
+        if (this.readyState == 4) {
+            switch (this.status) {
+            case 200:
+                $('#modalItem').modal('show')
+                break
+            }
+        } 
+    }
+    itemRequest.open('GET', 'items/' + itemName + '.json', true)
+    itemRequest.send()
+}
