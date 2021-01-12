@@ -10,11 +10,11 @@
     <body>
         <div class="container">
             <div class="card mb-3 mt-3">
-                <div class="row">
-                    <div class="col-lg-6">
+                <div class="card-body row">
+                    <div class="col-lg-4">
                         <img src="kirushyk.jpg" width="300" height="200"/>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-8">
                         <h2>Kirushyk</h2>
                         <div>Software Architect, focused on Machine Learning and Computer Vision.</div>
                         <ul class="list-unstyled">
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 pr-0">
                     <div class="card mb-3">
                         <div class="card-body">
                             <h4>PROJECTS</h4>
@@ -52,7 +52,7 @@
                         <div class="card-body">
                             <h4>ARTICLES</h4>
                             <ul>
-                                <li><a target="_blanc" href="404.html">Flow between last activation and loss</a></li> 
+                                <li><a target="_blanc" onclick="$('#modalItem').modal('show')">Flow between last activation and loss</a></li> 
                                 <li><a target="_blanc" href="404.html">Notes on Gradient Checking</a></li> 
                                 <!-- <li><a target="_blanc" href="404.html">Suffering of emulated minds</a></li>  -->
                                 <li><a target="_blanc" href="https://gstreamer.freedesktop.org/data/events/gstreamer-conference/2016/Kyrylo%20Polezhaiev%20-%20Profiling%20GStreamer%20Pipelines.pdf">Perfomance profiling of GStreamer pipelines</a> (2015, 2016)</li> 
@@ -63,23 +63,21 @@
                 </div>
             </div>
             <footer>Kyrylo Polezhaiev, 2015</footer>
-        </div>
-
-        <div class="modal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Modal body text goes here.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <div class="modal" name="modalItem" id="modalItem">
+                <div class="modal-dialog" role="document" style="max-width: 768px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Project or Article</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Description text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
