@@ -7,13 +7,24 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+.card {
+    border-style: dashed;
+}
+
+@media (prefers-color-scheme: light) {
+    .card {
+        border-color: #999;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         color: #ddd;
         background-color: #222;
     }
-}
-
-.card {
-    border-style: dashed;
+    .card {
+        color: #ddd;
+        border-color: #666;
+        background-color: #222;
+    }
 }
