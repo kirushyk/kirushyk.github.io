@@ -13,3 +13,7 @@ body {
         background-color: #222;
     }
 }
+
+.card {
+    border-style: dashed;
+}
