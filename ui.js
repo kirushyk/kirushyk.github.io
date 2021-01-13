@@ -6,12 +6,12 @@ function setPage(page) {
 }
 
 function showItemModal(itemName) {
+    $('#modalItem').modal('show')
     var itemRequest = new XMLHttpRequest()
     itemRequest.onreadystatechange = function () {
         if (this.readyState == 4) {
             switch (this.status) {
             case 200:
-                $('#modalItem').modal('show')
                 break
             }
         } 
