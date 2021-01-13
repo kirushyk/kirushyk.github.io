@@ -9,18 +9,29 @@ function showItemModal(itemName) {
     $('#modalItem').modal('show')
     $('#modalTitle').html('...')
     $('#modalBody').html('Loading...')
-    var itemRequest = new XMLHttpRequest()
-    itemRequest.onreadystatechange = function () {
+    var metadataRequest = new XMLHttpRequest()
+    metadataRequest.onreadystatechange = function () {
         if (this.readyState == 4) {
             switch (this.status) {
             case 200:
                 const item = JSON.parse(this.responseText)
                 $('#modalTitle').html(item.title)
-                $('#modalBody').html(item.body)
                 break
             }
         } 
     }
-    itemRequest.open('GET', 'items/' + itemName + '.json', true)
-    itemRequest.send()
+    metadataRequest.open('GET', 'items/' + itemName + '.json', true)
+    metadataRequest.send()
+    var bodyRequest = new XMLHttpRequest()
+    bodyRequest.onreadystatechange = function () {
+        if (this.readyState == 4) {
+            switch (this.status) {
+            case 200:
+                $('#modalBody').html(this.responseText)
+                break
+            }
+        } 
+    }
+    bodyRequest.open('GET', 'items/' + itemName + '.html', true)
+    bodyRequest.send()
 }
