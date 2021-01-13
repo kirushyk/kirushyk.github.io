@@ -12,6 +12,9 @@ function showItemModal(itemName) {
         if (this.readyState == 4) {
             switch (this.status) {
             case 200:
+                const item = JSON.parse(this.responseText)
+                $('#modalTitle').html(item.title)
+                $('#modalBody').html(item.body)
                 break
             }
         } 
