@@ -7,6 +7,8 @@ function setPage(page) {
 
 function showItemModal(itemName) {
     $('#modalItem').modal('show')
+    $('#modalTitle').html('...')
+    $('#modalBody').html('Loading...')
     var itemRequest = new XMLHttpRequest()
     itemRequest.onreadystatechange = function () {
         if (this.readyState == 4) {

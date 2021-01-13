@@ -11,6 +11,10 @@ body {
     border-style: dashed;
 }
 
+hr {
+    border-style: dashed;
+}
+
 @media (prefers-color-scheme: light) {
     .card {
         border-color: #999;
